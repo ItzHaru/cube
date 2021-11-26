@@ -7,6 +7,7 @@ const ez = document.getElementById('ez');
 const normal = document.getElementById('normal');
 const hard = document.getElementById('hard');
 const insane = document.getElementById('insane');
+const curdif = document.getElementById('curdif');
 
 let timer = false;
 let timer2 = false;
@@ -65,6 +66,7 @@ ez.addEventListener('click', () => {
         body = 0;
         speed = 500;
         dif = 1;
+        curdif.innerHTML = `Current difficulty: Ez`;
         result.innerHTML = statistika();
     }
 })
@@ -74,6 +76,7 @@ normal.addEventListener('click', () => {
         body = 0;
         speed = 300;
         dif = 2;
+        curdif.innerHTML = `Current difficulty: Normal`;
         result.innerHTML = statistika();
     }
 })
@@ -83,6 +86,7 @@ hard.addEventListener('click', () => {
         body = 0;
         speed = 100;
         dif = 3;
+        curdif.innerHTML = `Current difficulty: Hard`;
         result.innerHTML = statistika();
     }
 })
@@ -92,6 +96,7 @@ insane.addEventListener('click', () => {
         body = 0;
         speed = 1;
         dif = 4;
+        curdif.innerHTML = `Current difficulty: Insane :)`;
         result.innerHTML = statistika();
     }
 })
@@ -112,3 +117,5 @@ function statistika() {
     vysledek += `<p>Points: ${body}</p>`;
     return vysledek;
 }
+
+
