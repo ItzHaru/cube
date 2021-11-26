@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Kostka</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kostka</title>
 
     <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body class="text-center text-white bg-dark">
-        <header><h1 class="text-center p-2">Cube</h1></header>
-        <main>
+</head>
+
+<body class="text-center text-white bg-dark">
+    <header>
+        <h1 class="text-center p-2">Cube</h1>
+    </header>
+    <main>
         <div class="container">
             <figure>
                 <img class="p-4 m-1 border" id="cube" src="img/kostka6.png" alt="Kostka">
@@ -29,25 +33,41 @@
                 <img class="p-4 m-1 border" id="cube3" src="img/kostka6.png" alt="Kostka">
             </figure>
             <button class="mb-3" id="play">Play</button>
-            <div class="text" id="result">
-                <p>Number of throws: 0</p>
-                <p>Points: 0</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>How to play</h4>
+                    <p>1. Click on "play" to start your first throw</p>
+                    <p>2. To stop a throw, click on "stop"</p>
+                    <p><b>Warning: After choosing new difficulty all of your points will reset!</b></p>
+                </div>
+                <div class="text col-md-4" id="result">
+                    <h4>Stats:</h4>
+                    <p>Number of throws: 0</p>
+                    <p>Points: 0</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Point system</h4>
+                    <p>3 Matching numbers = 3 points</p>
+                    <p>2 Matching numbers = 2 points</p>
+                    <p>No matching numbers = -1 point</p>
+                </div>
             </div>
-            <h4 class="mt-5">Difficulty</h4>
-            <button class="ez" id="ez">Ez</button>
-            <button class="normal" id="normal">Normal</button>
-            <button class="hard" id="hard">Hard</button>
-            <button class="insane" id="insane">Insane :)</button>
-            <p class="text mt-1" id="curdif">Current difficulty: Normal</p>
+                <h4 class="mt-4">Difficulty</h4>
+                <button class="ez" id="ez">Ez</button>
+                <button class="normal" id="normal">Normal</button>
+                <button class="hard" id="hard">Hard</button>
+                <button class="insane" id="insane">Insane :)</button>
+                <p class="text mt-1" id="curdif">Current difficulty: Normal</p>
         </div>
-        </main>
-        <footer class="m-4 border-top">
-            <p class="mt-2">&copy; 2021 - Růženka Perinová IT2</p>
-        </footer>
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/hra.js"></script>
-    </body>
+    </main>
+    <footer class="m-4 border-top">
+        <p class="mt-2">&copy; 2021 - Růženka Perinová IT2</p>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/hra.js"></script>
+</body>
+
 </html>

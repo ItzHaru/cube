@@ -62,7 +62,7 @@ play.addEventListener('click', () => {
 });
 
 ez.addEventListener('click', () => {
-    if(on == false && dif != 1){
+    if (on == false && dif != 1) {
         body = 0;
         speed = 500;
         dif = 1;
@@ -72,7 +72,7 @@ ez.addEventListener('click', () => {
 })
 
 normal.addEventListener('click', () => {
-    if(on == false && dif != 2){
+    if (on == false && dif != 2) {
         body = 0;
         speed = 300;
         dif = 2;
@@ -82,7 +82,7 @@ normal.addEventListener('click', () => {
 })
 
 hard.addEventListener('click', () => {
-    if(on == false && dif != 3){
+    if (on == false && dif != 3) {
         body = 0;
         speed = 100;
         dif = 3;
@@ -92,7 +92,7 @@ hard.addEventListener('click', () => {
 })
 
 insane.addEventListener('click', () => {
-    if(on == false && dif != 4){
+    if (on == false && dif != 4) {
         body = 0;
         speed = 1;
         dif = 4;
@@ -102,9 +102,9 @@ insane.addEventListener('click', () => {
 })
 
 function bodyy() {
-    if(hod == hod2 && hod == hod3) {
+    if (hod == hod2 && hod == hod3) {
         body += 3;
-    } else if(hod == hod2 || hod2 == hod3 || hod == hod3) {
+    } else if (hod == hod2 || hod2 == hod3 || hod == hod3) {
         body += 2;
     } else {
         body -= 1;
@@ -113,7 +113,8 @@ function bodyy() {
 
 function statistika() {
     let vysledek;
-    vysledek = `<p>Number of throws: ${pocethodu}</p>`;
+    vysledek = `<h4>Stats:</h4>
+                <p>Number of throws: ${pocethodu}</p>`;
     vysledek += `<p>Points: ${body}</p>`;
     return vysledek;
 }
