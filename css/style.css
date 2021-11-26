@@ -1,0 +1,40 @@
+.border {
+    border-color: white !important;
+    border-radius: 5px;
+}
+
+.bg-dark {
+    background-color: rgb(20, 20, 20) !important;
+}
+
+.text {
+    font-size: 20px;
+}
+
+button {
+    border-radius: 4.5px;
+}
+
+.ez {
+    background-color: rgb(107, 255, 102);
+    border-color:rgb(69, 177, 65);
+}
+
+.normal {
+    background-color: rgb(255, 231, 97);
+    border-color: rgb(185, 166, 59);
+}
+
+.hard {
+    background-color: rgb(255, 97, 97);
+    border-color: rgb(187, 75, 75);
+}
+
+.insane {
+    background-color: rgb(199, 103, 255);
+    border-color: rgb(109, 55, 141);
+}
+
+hr {
+    color: #eee !important;
+}
